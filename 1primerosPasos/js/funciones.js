@@ -31,3 +31,4 @@ const sum=function(a=0,b=0){
 
 console.log( sum(12));
 console.log( sum(12,2));
+
