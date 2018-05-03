@@ -90,7 +90,8 @@ function enviarEmail(e){
         document.querySelector('#loaders').appendChild(enviado);
         setTimeout(function(){
             enviado.remove();
-            formularioEnviar.reset(); 
+            formularioEnviar.reset();
+            
         },5000);
     },3000);// Milisegundos
 
