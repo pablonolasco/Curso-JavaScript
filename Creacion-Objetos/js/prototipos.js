@@ -28,3 +28,13 @@ const cliente3= new Cliente('Miguel',100);
 console.log(cliente1.nombreClienteSaldo());
 console.log(cliente2.nombreClienteSaldo());
 console.log(cliente2.retirarSaldo(200));
+
+function Empresa(nombre, saldo,telefono,tipo){
+    Cliente.call(this, nombre,saldo);//herencia
+    this.telefono=telefono;
+    this.tipo=tipo;
+}
+
+Empresa.prototype=Object.create(Cliente.prototype);//heredar prototype
+const empresa= new Empresa('UDEMY',10000,1020020,'Educacion');
+console.log(empresa.nombreClienteSaldo());
