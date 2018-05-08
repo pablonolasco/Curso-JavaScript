@@ -1,19 +1,34 @@
-//let nombre=prompt('Cual es tu nombre:');
+let aprendiendo;
+aprendiendo=function(){
+    // Funcion tradicional
+}
 
-//document.getElementById('contenido').innerHTML=`El nombre es ${nombre}`;
-//console.error('metodo error');
-//console.warn("metodo warning");
-//Etiqueta saber elemento html
-document.querySelector("h1");
-//impresion en forma de tabla
-console.table([1,2,3])
+aprendiendo=() =>{
+    console.log('Aprendiendo JS');
+}
 
-/* saber en cuanto tiempo se ejecuta un bloque 
-console.time('Bloque');
-console.log("hola");
-console.log("hola");
-console.log("hola");
-console.log("hola");
-console.log("hola");
-console.timeEnd("Bloque");*/
+// Una linea no requiere llave
 
+aprendiendo= () => console.log('Aprendiendo JS');
+
+// Retonar un valor
+aprendiendo= () => 'Aprendiendo JS';
+
+
+// Retornando un objeto
+aprendiendo= () => (
+    { aprendiendo: 'Aprendiendo JS'}
+);
+
+// Pasar parametros
+aprendiendo= (tecnologia,saludo) => console.log(tecnologia+' '+saludo);
+
+//funcion map
+const producto=['Disco','Camisa','Guitarra'];
+
+const letrasProducto=producto.map(producto => producto.length);
+
+producto.forEach(producto =>{
+    console.log(producto);
+})
+aprendiendo('JS','Hola');
