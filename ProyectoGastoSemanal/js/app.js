@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded',function(){
     }else{
        
         // Instanciar un presupuesto
-            cCantidadPresupuesto=new Presupuesto(presupuestoPromp);
+        cCantidadPresupuesto=new Presupuesto(presupuestoPromp);
          
         // Interfaz la clase de Interfazs
         const ui= new Intertaz();
