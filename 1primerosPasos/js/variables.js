@@ -25,7 +25,7 @@ const
 
  //  Strings o Cadenas de Texto y sus métodos en JavaScript
  console.log(cita.length);//tamañao de la cadena
- let aprendiendo='Aprendiendo a',
+ let aprendiendo='Asesor Samuel Delgado',
         tecnologia='JavaScript';
  console.log(aprendiendo.concat(' ',tecnologia));
  console.log(tecnologia.toUpperCase());
@@ -34,7 +34,8 @@ const
  console.log(aprendiendo.slice(0,5));
  console.log(aprendiendo.split(' '));//separar cadena de texto
  console.log(aprendiendo.replace('a','remplazando texto'));
- console.log(aprendiendo.includes('a'));//busca el elemento y retorna un true o false si encuentra el elemento
+ 
+ console.log(aprendiendo.includes('Asesor'));//busca el elemento y retorna un true o false si encuentra el elemento
  let tecnologiaDos="JavaScript";
  console.log(tecnologiaDos.repeat(10))//repite el elemento;
 
