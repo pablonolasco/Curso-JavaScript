@@ -21,8 +21,8 @@ formulario.addEventListener('submit',(e)=>{
         //Todo correcto, tomar valores
         COTIZADOR.obtenerValores(monedaSeleccionada,criptomonedaSeleccionada)
                 .then(datos=>{
-                    UI.mostrarResultado(datos.resultado.data.quotes,monedaSeleccionada);
-                    console.log(datos.resultado);
+                    UI.mostrarResultado(datos.resultado.data,monedaSeleccionada);
+                    //console.log(datos.resultado);
                 })
     }
    

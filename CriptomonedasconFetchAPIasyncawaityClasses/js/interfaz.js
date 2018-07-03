@@ -48,8 +48,45 @@ class Interfaz{
 
     }
     mostrarResultado(resultado, monedaSeleccionada){
-        let moneda=monedaSeleccionada;
-        const valor=`${resultado.moneda} ${monedaSeleccionada}`;
-        console.log(valor);
+        //En caso de que alla resultado anterior lo elimina
+        const resultadoAnterior=document.querySelector('#resultado > div');
+        if(resultadoAnterior){
+            resultadoAnterior.remove();
+        }
+        //Muestra el spinner
+        this.mostrarSpinner();
+        //Conversion de hora
+        const valor=resultado.quotes[monedaSeleccionada];
+        const hora=new Date(resultado.last_updated * 1000);
+        const hora_actualizada=`${hora.getHours()}: ${hora.getMinutes()}`;
+        
+        let tmpleateHTML=``;
+        tmpleateHTML=`<div class="card cyan darken-3">
+                <div class="card-content white-text">
+                    <span class="card-title">Resultado:</span>
+                    <p>El precio de ${resultado.name} a moneda ${monedaSeleccionada} es de: ${valor.price}</p>    
+                    <p>Última hora: ${valor.percent_change_1h}</p>
+                    <p>Últimos 7 días: ${valor.percent_change_7d}</p>
+                    <p>Última 24 horas: ${valor.percent_change_24h}</p>
+                    <p>Última actualización: ${hora_actualizada} horas</p>    
+                </div>
+                            
+        </div>                
+        `;
+
+        setTimeout(()=>{
+            document.querySelector("#resultado").innerHTML=tmpleateHTML;
+            document.querySelector('.spinner img').remove();
+
+    },3000);
+        
+    }
+
+    //mostrar spiner
+    mostrarSpinner(){
+        const spinnerGif=document.createElement('img');
+        spinnerGif.src='img/spinner.gif';
+        document.querySelector('.spinner').appendChild(spinnerGif);
+
     }
 }
