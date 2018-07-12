@@ -18,6 +18,7 @@ const auto=[
 for(let i=0; i<auto.length; i++){
    console.log(auto[i].modelo);
 }
+
 //modificar valor de la propiedad del objeto
 auto[0].modelo='Audi';
 console.log(auto);
