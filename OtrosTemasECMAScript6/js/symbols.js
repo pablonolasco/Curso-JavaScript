@@ -2,8 +2,8 @@
 let nombre =Symbol();
 let apellido=Symbol();
 
-// los simbolos son unicos y no se pueden comparar
-// se consideran privados y no se pueden iterar para obtener su valor
+// *los simbolos son unicos y no se pueden comparar
+// *se consideran privados y no se pueden iterar para obtener su valor
 // Crear una personas
 
 let persona={

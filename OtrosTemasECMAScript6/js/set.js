@@ -1,5 +1,5 @@
 /**
- * Los set no se pueden aceptar datos duplicados
+ * *Los set no se pueden aceptar datos duplicados
  */
 let carrito = new Set();
 carrito.add('Camisa');
