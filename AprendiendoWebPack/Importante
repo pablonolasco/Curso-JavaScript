@@ -1,0 +1,13 @@
+Comandos
+
+//configuracion inicial del proyecto
+npm init 
+
+//comando para instalar webpack, ejecutarse en modo administrador
+npm install webpack --save-dev
+
+// instalar cli
+npm install --save-dev webpack-cli
+
+// cuando se pasa el archivo package.json ejecutar el siguiente comando para que se instalen las dependencias, por eso solo se pasa este archivo package.json, para no pasar toda la carpeta de node
+npm install

@@ -1,0 +1,15 @@
+{
+  "name": "aprendiendowebpack",
+  "version": "1.0.0",
+  "description": "Aprendiendo WebPack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Nolasco",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
+  }
+}
